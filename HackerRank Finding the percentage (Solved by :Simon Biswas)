@@ -1,0 +1,16 @@
+if __name__ == '__main__':
+    n = int(input())
+    student_marks = {}
+    for _ in range(n):
+        name, *line = input().split()
+        scores = list(map(float, line))
+        student_marks[name] = scores
+    query_name = input()
+    p=student_marks.get(query_name)
+    s=0
+    for i in p:
+       s=s+i
+    p1=(s/3)
+    print ("%.2f" % p1) 
+    
+# Code Solved by Simon Biswas
