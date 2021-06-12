@@ -1,0 +1,6 @@
+def print_full_name(a, b):
+    a1=str(a)
+    b1=str(b)
+    print(f"Hello {a} {b}! You just delved into python.")
+
+# Code Solved by Simon Biswas
