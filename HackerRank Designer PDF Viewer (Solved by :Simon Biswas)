@@ -1,0 +1,32 @@
+#!/bin/python3
+
+import math
+import os
+import random
+import re
+import sys
+
+# Complete the designerPdfViewer function below.
+def designerPdfViewer(h, word):
+    p=list(word)
+    p1=list()
+    for i in p:
+        p2=ord(i)-97
+        p1.append(h[p2])
+    p3=max(p1)
+    p4=p3*len(p)
+    return p4
+        
+
+if __name__ == '__main__':
+    fptr = open(os.environ['OUTPUT_PATH'], 'w')
+
+    h = list(map(int, input().rstrip().split()))
+
+    word = input()
+
+    result = designerPdfViewer(h, word)
+
+    fptr.write(str(result) + '\n')
+
+    fptr.close()
