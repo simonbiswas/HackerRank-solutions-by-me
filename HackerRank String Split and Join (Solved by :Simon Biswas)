@@ -1,0 +1,7 @@
+def split_and_join(line):
+    # write your code here
+    p=line.split()
+    p1="-".join(p)
+    return p1
+
+# Code Solved by Simon Biswas
