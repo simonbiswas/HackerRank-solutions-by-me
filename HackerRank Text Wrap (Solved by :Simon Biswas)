@@ -1,0 +1,6 @@
+
+
+def wrap(string, max_width):
+    return "\n".join([string[p:p+max_width] for p in range(0, len(string), max_width)])
+
+# Code Solved by Simon Biswas
