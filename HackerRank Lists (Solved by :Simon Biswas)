@@ -1,0 +1,35 @@
+if __name__ == '__main__':
+    p=[]
+    N = int(input())
+    for i in range (0,N):
+        s=input().split()
+        if len(s)==1: 
+            command=str(s[0])
+        if len(s)==2:
+            command=str(s[0])
+            p1=int(s[1])
+            #p2=p[2]
+        if len(s)==3:
+            command=str(s[0])
+            p1=int(s[1])
+            p2=int(s[2])
+        
+        if command=="append":
+            p.append(p1)
+        elif command=="insert":
+            p.insert(p1,p2)
+        elif command=="remove":
+            p.remove(p1)
+   
+        elif command=="sort":
+            p.sort()
+        elif command=="pop":
+            p.pop()
+        elif command=="reverse":
+            p.reverse()
+        elif command=="print":
+            print(p)
+# Code Solved by Simon Biswas        
+            
+    
+    
