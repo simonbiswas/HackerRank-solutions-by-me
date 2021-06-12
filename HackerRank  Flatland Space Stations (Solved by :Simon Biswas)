@@ -1,0 +1,38 @@
+#!/bin/python3
+
+import math
+import os
+import random
+import re
+import sys
+
+# Complete the flatlandSpaceStations function below.
+# Code Solved by Simon Biswas
+def flatlandSpaceStations(n, c):
+    if len(c)==n: return 0
+    p=list()
+    for i in range(0,n):
+        p2=list()
+        for j in c:
+            p1=abs(i-j)
+            p2.append(p1)
+        p.append(min(p2))
+    return max(p)
+    
+
+if __name__ == '__main__':
+    fptr = open(os.environ['OUTPUT_PATH'], 'w')
+
+    nm = input().split()
+
+    n = int(nm[0])
+
+    m = int(nm[1])
+
+    c = list(map(int, input().rstrip().split()))
+
+    result = flatlandSpaceStations(n, c)
+
+    fptr.write(str(result) + '\n')
+
+    fptr.close()
