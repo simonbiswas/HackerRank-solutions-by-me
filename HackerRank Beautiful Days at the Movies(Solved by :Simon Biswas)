@@ -1,0 +1,40 @@
+#!/bin/python3
+
+import math
+import os
+import random
+import re
+import sys
+
+# Complete the beautifulDays function below.
+# Code Solved by Simon Biswas
+def beautifulDays(i, j, k):
+    count=0
+    for m in range(i,j+1):
+        revs_number=0
+        number=m
+        while (number > 0):   
+            remainder = number % 10  
+            revs_number = (revs_number * 10) + remainder  
+            number = number // 10  
+        p1=abs(m-revs_number)
+        if p1%k==0: count=count+1
+    return count
+        
+
+if __name__ == '__main__':
+    fptr = open(os.environ['OUTPUT_PATH'], 'w')
+
+    ijk = input().split()
+
+    i = int(ijk[0])
+
+    j = int(ijk[1])
+
+    k = int(ijk[2])
+
+    result = beautifulDays(i, j, k)
+
+    fptr.write(str(result) + '\n')
+
+    fptr.close()
