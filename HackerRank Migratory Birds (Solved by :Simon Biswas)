@@ -1,0 +1,43 @@
+#!/bin/python3
+
+import math
+import os
+import random
+import re
+import sys
+
+# Complete the migratoryBirds function below.
+# Code Solved by Simon Biswas
+def migratoryBirds(arr):
+    p=len(arr)-1
+    newArray=[0]*6
+    finalArray=list()
+    for i in range(0,p):
+        if arr[i]==1: newArray[1]=newArray[1]+1
+        if arr[i]==2: newArray[2]=newArray[2]+1
+        if arr[i]==3: newArray[3]=newArray[3]+1
+        if arr[i]==4: newArray[4]=newArray[4]+1
+        if arr[i]==5: newArray[5]=newArray[5]+1
+    p1=max(newArray)
+    for j in range(0,len(newArray)-1):
+        if newArray[j]==p1:
+            finalArray.append(j)
+    return min(finalArray)
+        
+    
+      
+        
+        
+
+if __name__ == '__main__':
+    fptr = open(os.environ['OUTPUT_PATH'], 'w')
+
+    arr_count = int(input().strip())
+
+    arr = list(map(int, input().rstrip().split()))
+
+    result = migratoryBirds(arr)
+
+    fptr.write(str(result) + '\n')
+
+    fptr.close()
