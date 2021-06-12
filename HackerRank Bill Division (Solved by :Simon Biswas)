@@ -1,0 +1,33 @@
+#!/bin/python3
+
+import math
+import os
+import random
+import re
+import sys
+
+# Complete the bonAppetit function below.
+# Code Solved by Simon Biswas
+def bonAppetit(bill, k, b):
+    p=sum(bill)
+    p1=bill[k]
+    p2=(p-p1)//2
+    p3=abs(p2-b)
+    if p3==0: print('Bon Appetit')
+    else: print(p3) 
+    
+    
+    
+
+if __name__ == '__main__':
+    nk = input().rstrip().split()
+
+    n = int(nk[0])
+
+    k = int(nk[1])
+
+    bill = list(map(int, input().rstrip().split()))
+
+    b = int(input().strip())
+
+    bonAppetit(bill, k, b)
