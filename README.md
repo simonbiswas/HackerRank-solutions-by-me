@@ -1,1 +1,1 @@
-# Hackerrank-solutions-by Simon Biswas
+# HackerRank-solutions-by Simon Biswas
