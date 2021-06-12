@@ -1,0 +1,8 @@
+
+# Code Solved by Simon Biswas
+# Complete the solve function below.
+def solve(s):
+    for j in s.split():
+        s = s.replace(j,j.capitalize())
+    return s
+
