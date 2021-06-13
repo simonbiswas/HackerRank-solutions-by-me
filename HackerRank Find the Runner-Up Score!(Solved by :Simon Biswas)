@@ -1,0 +1,13 @@
+if __name__ == '__main__':
+    n = int(raw_input())
+    arr = map(int, raw_input().split())
+    arr.sort(reverse=True)
+    i=0
+    while(i<n):
+        if arr[i]!=arr[i+1]:
+            print(arr[i+1])
+            break
+        else:
+            i=i+1
+ 
+   # Code solved by Simon Biswas
