@@ -1,0 +1,17 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner sc= new Scanner(System.in);
+        for(int j=1;sc.hasNext()==true;j++){
+            System.out.println(j+" "+sc.nextLine());
+        }
+    }
+}
+//Code Solved by Simon Biswas
