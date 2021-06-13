@@ -1,0 +1,11 @@
+if __name__ == '__main__':
+    s = input()
+    s1=str(s)
+  
+    print (any(p.isalnum() for p in s))
+    print (any(p.isalpha() for p in s))
+    print (any(p.isdigit() for p in s))
+    print (any(p.islower() for p in s))
+    print (any(p.isupper() for p in s))
+   
+# Code Solved by Simon Biswas
