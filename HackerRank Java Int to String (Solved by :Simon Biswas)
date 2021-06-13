@@ -1,0 +1,5 @@
+
+
+   //Write your code here
+//int n=sc.nextInt();
+String s=""+n;
