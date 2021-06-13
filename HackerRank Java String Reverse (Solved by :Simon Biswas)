@@ -1,0 +1,51 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        
+        Scanner sc=new Scanner(System.in);
+        String A=sc.next();
+        int p=A.length();
+        boolean flag=true;
+        char [] c=A.toCharArray();
+        if(p%2==0){
+            int p1=(p/2);
+            for(int i=0;i<p1;i++){
+                for(int j=A.length()-1;j>=p1;j--){
+                    if(c[i]!=c[j]){
+                        flag=false;
+                        //break;
+                    }                   
+                }              
+            }
+            if (flag==true) System.out.println("Yes");
+            else System.out.println("No");           
+        }
+        
+        else{
+             int p1=(p/2);
+             //int p2=p1+1;
+             for(int i=0;i<=p1;i++){
+                for(int j=A.length()-1;j>=p1;j--){
+                    if(c[i]!=c[j]){
+                        //System.out.println("No");
+                        flag=false;
+                       // break;
+                    }                   
+                }              
+            }
+            if(flag==true) System.out.println("Yes"); 
+            else System.out.println("No");          
+        }
+         
+        }
+        /* Enter your code here. Print output to STDOUT. */
+        
+        
+    }
+//Code Solved by Simon Biswas
+
+
+
